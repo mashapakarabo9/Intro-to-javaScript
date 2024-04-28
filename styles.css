@@ -1,42 +1,41 @@
 body {
-   
-    background-image: url(https://thumbs.dreamstime.com/b/open-notebook-textural-brown-desk-modern-office-next-to-cup-black-coffee-freelancer-needs-workstation-accessories-56150522.jpg) ;
-    background-repeat: no-repeat;
-    background-size: cover
-    ;
-    margin: 0;
+    margin: 2px;
 }
 
 .header-section {
     margin: 0;
     padding: 0;
     margin-bottom: 100px;
+    width: 100%;
+
+
 }
 
 .nav-bar {
     display: flex;
+    width: 100%;
     padding-top: 10px;
-    background-color: #111;
-    height: 100px;
+    background-color: lightgray;
     align-items: center;
     text-decoration-line: none;
-    
+    border-radius: 5px;
+    box-shadow: 0 0 30px #000000;
+
 
 }
 
 .logo {
-    display: flex;
-    margin-right: 55%;
-    padding-left: 25px;
-    padding-bottom: 20px;
+    margin-right: 57%;
+    padding-left: 5, 5%;
+    padding-bottom: 2%;
     padding-top: 10px;
 }
 
 .logo img {
     width: 90px;
     height: 90px;
-    border-radius: 50%;
-    border: #45a049 solid;
+    margin-left: 12px;
+    box-shadow: 0 0 25px;
 
 }
 
@@ -44,6 +43,9 @@ body {
 
     display: inline;
     padding-right: 0px;
+    margin-right: 15px;
+
+
 
 
 }
@@ -51,16 +53,20 @@ body {
 .nav-bar ul li a {
     text-decoration: none;
     font-size: 20px;
-    color: #f2f2f2;
-    padding: 14px;
+    color: green;
+    padding: 5px 14px;
+
+    background-color: whitesmoke;
+    border-radius: 15px;
 }
 
 ul li a:hover {
-    color:black;
-    background-color: #f2f2f2;
+    color: lightsalmon;
+    background-color: whitesmoke;
     border-radius: 20px;
-    
-    
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 10px #000000;
+
 
 }
 
@@ -68,6 +74,7 @@ ul li a:hover {
     margin: 30px;
     width: 90%;
     height: 500px;
+    box-shadow: 15px 15 15px lightblue;
 
 }
 
@@ -76,18 +83,48 @@ ul li a:hover {
     width: 100%;
     height: auto;
 }
-.about-me
-{
-margin-left: 20%;
-margin-right: 20%;
-margin-bottom: 5%;
-border-radius: 25px;
-text-align: center;
-padding: 3% 0%;
-color: rgb(253, 253, 253);
-background-color:#000;
-opacity: .4;
 
+.about-me {
+    display: flex;
+    flex-flow: column;
+}
+
+.personal-info {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2%;
+    text-align: center;
+    box-shadow: 0 29px 20px #000000;
+    color: black;
+    background-color: #ccc;
+    opacity: .7;
+}
+
+.education {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2%;
+
+    box-shadow: 0 0 25px #000000;
+    text-align: center;
+    box-shadow: white;
+    color: black;
+    background-color: #ccc;
+    opacity: .7;
+
+}
+
+.work-experience {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    text-align: center;
+    box-shadow: lightgrey;
+
+    color: black;
+    background-color: #ccc;
+    opacity: .7;
+    box-shadow: 0 25px 10px #000000;
 }
 
 
@@ -101,32 +138,38 @@ opacity: .4;
     padding-left: 15px;
     margin-top: 10px;
     display: flex;
-    background-color: #111;
     margin-bottom: 15px;
     border-radius: 20px;
 
 }
 
 .bio-section p {
-    width: 70%;
-    padding-right: 300px;
-    color: #f2f2f2;
-    font-size: 16px;
-}
-#bio
+    width: 40%;
 
+    color: hx(0%, 0%, 0%, 14%);
+    padding: 15px;
+    font-size: 16px;
+    background-color: lightgray;
+    box-shadow: 15px 15px #525151e9;
+    border: none;
+}
+
+.sections h1 {
+    border: lightgray;
+}
 
 video {
     object-fit: fill;
     min-height: 400px;
-    }
+}
+
 img {
     width: 200px;
     height: 250px;
     border-radius: 50%;
+    margin-left: 20%;
 
-
-
+    box-shadow: 0 0 50px #525151e9;
 
 
 }
@@ -143,9 +186,7 @@ footer ul li a {
 
 /* =====================contact us ==================*/
 
-* {
-    box-sizing: border-box;
-}
+
 
 /* Style inputs */
 input[type=text],
@@ -160,18 +201,19 @@ textarea {
 }
 
 input[type=submit] {
-    background-color:black;
-    color: white;
+    background-color: whitesmoke;
+    color: black;
     padding: 12px 20px;
-    border: none;
+   
     cursor: pointer;
     border: none;
-    border-radius: 20px;
+    width: 100%;
+
 }
 
 input[type=submit]:hover {
-    background-color: white;
-    color: black;
+    background-color: green;
+    color: white;
     transition: 0.5s;
 }
 
@@ -184,12 +226,15 @@ input[type=submit]:hover {
 
 /* Create two columns that float next to eachother */
 .column {
-    margin-left: 25%;
+    margin-left: 17%;
     width: 50%;
     margin-top: 6px;
-    padding: 20px;
+    background-color: lightgray;
+    padding: 50px;
+    box-shadow: 0 0 42px;
 }
-.column h2{
+
+.column h2 {
     background-color: #000;
     color: #ccc;
     border-radius: 2px;
@@ -211,19 +256,21 @@ input[type=submit]:hover {
         width: 100%;
         margin-top: 0;
     }
-    .header-section ul li a{
-        font-size: 10px;
+
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
     }
 }
 
-@media only screen and (Max-width: 768px) {
-    
-}
+@media only screen and (Max-width: 768px) {}
+
 /* =====================================================================footer styling===================================*/
 
 
 footer {
-    background-color: #111;
+    background-color: lightgrey;
 }
 
 .footerContainer {
@@ -283,10 +330,12 @@ footer {
 
 .footerNav ul li a:hover {
     opacity: 1;
+    color: #000;
+    padding: 5px;
 }
 
 .footerBottom {
-    background-color: #000;
+    background-color: lightblue;
     padding: 20px;
     text-align: center;
 }
